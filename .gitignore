@@ -1,2 +1,4 @@
 # Xcode
+#
 *.xcuserstate
+.DS_Store

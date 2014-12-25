@@ -14,6 +14,10 @@
 		762FEE6A1A3FFC140067BEE3 /* p3.png in Resources */ = {isa = PBXBuildFile; fileRef = 762FEE671A3FFC140067BEE3 /* p3.png */; };
 		762FEE6D1A3FFEB70067BEE3 /* ControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762FEE6C1A3FFEB70067BEE3 /* ControlViewController.m */; };
 		762FEE701A402A870067BEE3 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 762FEE6F1A402A870067BEE3 /* ConfigViewController.m */; };
+		76325EB61A4C0863004B4D4E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76325EB51A4C0863004B4D4E /* NotificationCenter.framework */; };
+		76325EBC1A4C0863004B4D4E /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76325EBB1A4C0863004B4D4E /* TodayViewController.m */; };
+		76325EBE1A4C0863004B4D4E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76325EBD1A4C0863004B4D4E /* MainInterface.storyboard */; };
+		76325EC21A4C0863004B4D4E /* KingHome Today Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 76325EB31A4C0863004B4D4E /* KingHome Today Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		765600041A3EB1F200F04123 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 765600031A3EB1F200F04123 /* main.m */; };
 		765600071A3EB1F200F04123 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 765600061A3EB1F200F04123 /* AppDelegate.m */; };
 		7656000F1A3EB1F200F04123 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7656000E1A3EB1F200F04123 /* Images.xcassets */; };
@@ -41,6 +45,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		76325EBF1A4C0863004B4D4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7656FFF61A3EB1F200F04123 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76325EB21A4C0863004B4D4E;
+			remoteInfo = "KingHome Today Extension";
+		};
 		765600181A3EB1F200F04123 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7656FFF61A3EB1F200F04123 /* Project object */;
@@ -49,6 +60,20 @@
 			remoteInfo = KingHome;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		76325EC11A4C0863004B4D4E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				76325EC21A4C0863004B4D4E /* KingHome Today Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		762EB07D1A4AB2B400087DED /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
@@ -59,6 +84,12 @@
 		762FEE6C1A3FFEB70067BEE3 /* ControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlViewController.m; sourceTree = "<group>"; };
 		762FEE6E1A402A870067BEE3 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
 		762FEE6F1A402A870067BEE3 /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		76325EB31A4C0863004B4D4E /* KingHome Today Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KingHome Today Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76325EB51A4C0863004B4D4E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		76325EB91A4C0863004B4D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76325EBA1A4C0863004B4D4E /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		76325EBB1A4C0863004B4D4E /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		76325EBD1A4C0863004B4D4E /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		765600021A3EB1F200F04123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		765600031A3EB1F200F04123 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		765600051A3EB1F200F04123 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,6 +147,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		76325EB01A4C0863004B4D4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76325EB61A4C0863004B4D4E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		765600141A3EB1F200F04123 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +178,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76325EB41A4C0863004B4D4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76325EB51A4C0863004B4D4E /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76325EB71A4C0863004B4D4E /* KingHome Today Extension */ = {
+			isa = PBXGroup;
+			children = (
+				76325EBA1A4C0863004B4D4E /* TodayViewController.h */,
+				76325EBB1A4C0863004B4D4E /* TodayViewController.m */,
+				76325EBD1A4C0863004B4D4E /* MainInterface.storyboard */,
+				76325EB81A4C0863004B4D4E /* Supporting Files */,
+			);
+			path = "KingHome Today Extension";
+			sourceTree = "<group>";
+		};
+		76325EB81A4C0863004B4D4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76325EB91A4C0863004B4D4E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		765600001A3EB1F200F04123 /* KingHome */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +332,8 @@
 			children = (
 				765600001A3EB1F200F04123 /* KingHome */,
 				7656001A1A3EB1F200F04123 /* KingHomeTests */,
+				76325EB71A4C0863004B4D4E /* KingHome Today Extension */,
+				76325EB41A4C0863004B4D4E /* Frameworks */,
 				7656FFFF1A3EB1F200F04123 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -275,6 +343,7 @@
 			children = (
 				7656FFFE1A3EB1F200F04123 /* KingHome.app */,
 				765600171A3EB1F200F04123 /* KingHomeTests.xctest */,
+				76325EB31A4C0863004B4D4E /* KingHome Today Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,6 +351,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		76325EB21A4C0863004B4D4E /* KingHome Today Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76325EC51A4C0864004B4D4E /* Build configuration list for PBXNativeTarget "KingHome Today Extension" */;
+			buildPhases = (
+				76325EAF1A4C0863004B4D4E /* Sources */,
+				76325EB01A4C0863004B4D4E /* Frameworks */,
+				76325EB11A4C0863004B4D4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KingHome Today Extension";
+			productName = "KingHome Today Extension";
+			productReference = 76325EB31A4C0863004B4D4E /* KingHome Today Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		765600161A3EB1F200F04123 /* KingHomeTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 765600241A3EB1F200F04123 /* Build configuration list for PBXNativeTarget "KingHomeTests" */;
@@ -307,10 +393,12 @@
 				7656FFFA1A3EB1F200F04123 /* Sources */,
 				7656FFFB1A3EB1F200F04123 /* Frameworks */,
 				7656FFFC1A3EB1F200F04123 /* Resources */,
+				76325EC11A4C0863004B4D4E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				76325EC01A4C0863004B4D4E /* PBXTargetDependency */,
 			);
 			name = KingHome;
 			productName = KingHome;
@@ -326,6 +414,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "东莞勤上光电股份有限公司";
 				TargetAttributes = {
+					76325EB21A4C0863004B4D4E = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					765600161A3EB1F200F04123 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 7656FFFD1A3EB1F200F04123;
@@ -350,11 +441,20 @@
 			targets = (
 				7656FFFD1A3EB1F200F04123 /* KingHome */,
 				765600161A3EB1F200F04123 /* KingHomeTests */,
+				76325EB21A4C0863004B4D4E /* KingHome Today Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		76325EB11A4C0863004B4D4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76325EBE1A4C0863004B4D4E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		765600151A3EB1F200F04123 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,6 +488,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		76325EAF1A4C0863004B4D4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76325EBC1A4C0863004B4D4E /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		765600131A3EB1F200F04123 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -414,6 +522,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		76325EC01A4C0863004B4D4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76325EB21A4C0863004B4D4E /* KingHome Today Extension */;
+			targetProxy = 76325EBF1A4C0863004B4D4E /* PBXContainerItemProxy */;
+		};
 		765600191A3EB1F200F04123 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7656FFFD1A3EB1F200F04123 /* KingHome */;
@@ -422,6 +535,32 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		76325EC31A4C0864004B4D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KingHome Today Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		76325EC41A4C0864004B4D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				INFOPLIST_FILE = "KingHome Today Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		7656001F1A3EB1F200F04123 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -569,6 +708,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		76325EC51A4C0864004B4D4E /* Build configuration list for PBXNativeTarget "KingHome Today Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76325EC31A4C0864004B4D4E /* Debug */,
+				76325EC41A4C0864004B4D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		765600211A3EB1F200F04123 /* Build configuration list for PBXNativeTarget "KingHome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

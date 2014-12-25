@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>KingHome Today Extension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>KingHome.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>76325EB21A4C0863004B4D4E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>765600161A3EB1F200F04123</key>
 		<dict>
 			<key>primary</key>

@@ -59,7 +59,7 @@
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    if ([url.scheme  isEqual: @"KingHomeEnter"]) {
+    if ([url.scheme  isEqual: @"kszhj"]) {
         if ([url.host  isEqual: @"enter"]) {
             NSLog(@"从Today过来！");
         }

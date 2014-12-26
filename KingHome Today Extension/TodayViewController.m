@@ -39,8 +39,8 @@
     [NSURLConnection sendAsynchronousRequest:request queue:nil completionHandler:nil];
 }
 
-- (IBAction)toApp:(id)sender {
-    NSURL *url = [NSURL URLWithString:@"KingHomeEnter://enter"];
+- (IBAction)toContainingApp:(id)sender {
+    NSURL *url = [NSURL URLWithString:@"kszhj://enter"];
     [self.extensionContext openURL:url completionHandler:nil];
 }
 

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Today View Controller-->
@@ -9,16 +10,19 @@
             <objects>
                 <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
-                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                        <viewControllerLayoutGuide type="top" id="A73-So-s61"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sbx-0c-rOj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwT-PO-jW1">
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwT-PO-jW1">
                                 <rect key="frame" x="15" y="30" width="60" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="BdB-6r-CpN"/>
+                                </constraints>
                                 <state key="normal" title="打开">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,7 +30,7 @@
                                     <action selector="btnSendCommad:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="qyL-9Y-TqY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb1-2A-sM0">
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb1-2A-sM0">
                                 <rect key="frame" x="15" y="80" width="60" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="关闭">
@@ -36,26 +40,41 @@
                                     <action selector="btnSendCommad:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="YgU-HM-mB9"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Slk-aK-HtS">
-                                <rect key="frame" x="100" y="30" width="200" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Slk-aK-HtS">
+                                <rect key="frame" x="107" y="30" width="200" height="31"/>
                                 <color key="minimumTrackTintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 <color key="maximumTrackTintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <connections>
                                     <action selector="sldSendCommad:" destination="M4Y-Lb-cyx" eventType="valueChanged" id="Xax-yv-j9R"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vlI-v3-r8y">
-                                <rect key="frame" x="100" y="80" width="200" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vlI-v3-r8y">
+                                <rect key="frame" x="107" y="80" width="200" height="31"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="maximumTrackTintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A3-qh-d3d">
-                                <rect key="frame" x="282" y="120" width="22" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A3-qh-d3d">
+                                <rect key="frame" x="290" y="120" width="22" height="22"/>
                                 <connections>
-                                    <action selector="toApp:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="HGu-6K-wgC"/>
+                                    <action selector="toContainingApp:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="CBr-vl-DCT"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="vlI-v3-r8y" firstAttribute="top" secondItem="Slk-aK-HtS" secondAttribute="bottom" constant="20" id="DRq-lj-thp"/>
+                            <constraint firstItem="7A3-qh-d3d" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="282" id="GQK-Bl-Bng"/>
+                            <constraint firstItem="Slk-aK-HtS" firstAttribute="top" secondItem="A73-So-s61" secondAttribute="bottom" constant="30" id="Hhz-Kw-D7p"/>
+                            <constraint firstAttribute="trailing" secondItem="Slk-aK-HtS" secondAttribute="trailing" constant="15" id="UJ2-JJ-XWt"/>
+                            <constraint firstItem="Lb1-2A-sM0" firstAttribute="trailing" secondItem="JwT-PO-jW1" secondAttribute="trailing" id="Wc7-7u-YTr"/>
+                            <constraint firstAttribute="trailing" secondItem="7A3-qh-d3d" secondAttribute="trailing" constant="16" id="aX3-EK-Sfs"/>
+                            <constraint firstItem="Lb1-2A-sM0" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="15" id="aiD-5E-SVJ"/>
+                            <constraint firstItem="Sbx-0c-rOj" firstAttribute="top" secondItem="7A3-qh-d3d" secondAttribute="bottom" constant="8" id="ehf-JK-jHZ"/>
+                            <constraint firstItem="Lb1-2A-sM0" firstAttribute="leading" secondItem="JwT-PO-jW1" secondAttribute="leading" id="fUK-7K-Sqr"/>
+                            <constraint firstItem="7A3-qh-d3d" firstAttribute="top" secondItem="vlI-v3-r8y" secondAttribute="bottom" constant="10" id="jfX-LE-R3A"/>
+                            <constraint firstItem="Lb1-2A-sM0" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" constant="-1" id="k8B-D9-rmR"/>
+                            <constraint firstAttribute="trailing" secondItem="vlI-v3-r8y" secondAttribute="trailing" constant="15" id="nlU-Ba-C6d"/>
+                            <constraint firstItem="JwT-PO-jW1" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="15" id="uto-Fl-z3s"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <nil key="simulatedStatusBarMetrics"/>

@@ -27,7 +27,7 @@
 			<string>com.kingsun-china.KingHome</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>KingHomeEnter</string>
+				<string>kszhj</string>
 			</array>
 		</dict>
 	</array>

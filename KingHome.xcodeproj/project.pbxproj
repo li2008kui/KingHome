@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17337BFF1A6E25E70005BBCD /* ctloop.png in Resources */ = {isa = PBXBuildFile; fileRef = 17337BFD1A6E25E70005BBCD /* ctloop.png */; };
+		17337C001A6E25E70005BBCD /* rollline.png in Resources */ = {isa = PBXBuildFile; fileRef = 17337BFE1A6E25E70005BBCD /* rollline.png */; };
 		760E66651A3EF4F7008F3E69 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 765600671A3EE24200F04123 /* QuartzCore.framework */; };
 		762EB07E1A4AB2B400087DED /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 762EB07D1A4AB2B400087DED /* libzbar.a */; };
 		762FEE681A3FFC140067BEE3 /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = 762FEE651A3FFC140067BEE3 /* p1.png */; };
@@ -76,6 +78,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17337BFD1A6E25E70005BBCD /* ctloop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ctloop.png; sourceTree = "<group>"; };
+		17337BFE1A6E25E70005BBCD /* rollline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rollline.png; sourceTree = "<group>"; };
 		762EB07D1A4AB2B400087DED /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
 		762FEE651A3FFC140067BEE3 /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1.png; sourceTree = "<group>"; };
 		762FEE661A3FFC140067BEE3 /* p2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2.png; sourceTree = "<group>"; };
@@ -260,6 +264,8 @@
 		765600331A3ECC0B00F04123 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				17337BFD1A6E25E70005BBCD /* ctloop.png */,
+				17337BFE1A6E25E70005BBCD /* rollline.png */,
 				762FEE651A3FFC140067BEE3 /* p1.png */,
 				762FEE661A3FFC140067BEE3 /* p2.png */,
 				762FEE671A3FFC140067BEE3 /* p3.png */,
@@ -470,10 +476,12 @@
 				7656004B1A3ECC5100F04123 /* msgus@2x.png in Resources */,
 				765600411A3ECC5100F04123 /* devs@2x.png in Resources */,
 				765600481A3ECC5100F04123 /* msgs.png in Resources */,
+				17337C001A6E25E70005BBCD /* rollline.png in Resources */,
 				7656000F1A3EB1F200F04123 /* Images.xcassets in Resources */,
 				765600461A3ECC5100F04123 /* morus.png in Resources */,
 				765600471A3ECC5100F04123 /* morus@2x.png in Resources */,
 				765600441A3ECC5100F04123 /* mors.png in Resources */,
+				17337BFF1A6E25E70005BBCD /* ctloop.png in Resources */,
 				765600401A3ECC5100F04123 /* devs.png in Resources */,
 				765600451A3ECC5100F04123 /* mors@2x.png in Resources */,
 				765600431A3ECC5100F04123 /* devus@2x.png in Resources */,

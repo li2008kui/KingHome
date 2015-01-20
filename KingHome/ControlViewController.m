@@ -32,7 +32,7 @@
     UIBarButtonItem *bItme = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(setDeviceInfo:)];
     self.navigationItem.rightBarButtonItem = bItme;
     [bItme release];
-    
+    /*
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     btn1.frame = CGRectMake(50, 100, 100, 50);
     [btn1 setTitle:@"开/关" forState:UIControlStateNormal];
@@ -61,7 +61,41 @@
     slider2.transform = CGAffineTransformRotate(slider2.transform, 3 * M_PI_2);
     [slider2 addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:slider2];
-    [slider2 release];
+    [slider2 release];*/
+    
+    UIImageView *iv = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ctloop"]];
+    iv.frame = CGRectMake(10, 150, 300, 300);
+    [self.view addSubview:iv];
+    [iv release];
+    
+    UIPickerView *pv = [[UIPickerView alloc] initWithFrame:CGRectMake(140, 220, 40, 100)];
+    pv.showsSelectionIndicator = NO;
+    pv.dataSource = self;
+    pv.delegate = self;
+    [self.view addSubview:pv];
+    [pv release];
+    
+    [pv selectRow:5 inComponent:0 animated:YES];
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return 99;
+}
+
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view {
+    UIImageView *tempiv = (UIImageView *)view;
+    
+    if (!tempiv) {
+        tempiv = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"rollline"]];
+        tempiv.frame = CGRectMake(0, 0, 40, 5);
+        [tempiv autorelease];
+    }
+    
+    return tempiv;
 }
 
 - (void)setDeviceInfo:(UIBarButtonItem *)barButtonItem
